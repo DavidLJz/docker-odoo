@@ -1,0 +1,5 @@
+desktop.ini
+.DB_store
+.env
+*.sublime*
+dump.sql
