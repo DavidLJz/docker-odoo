@@ -5,23 +5,23 @@
 https://www.docker.com/get-started
 ```
 
-
-## 2. Desde consola de comando o con Docker hacer el build de la imagen
-Esperar a que se termine de ejecutar el build
-
-```
-docker-compose up -d
-```
-
-
-## 3. Al terminar, ejecutar el seguimiento comando
+## 2. Al terminar, ejecutar el seguimiento comando
 ```
 docker-compose run odoo bash
 ```
 
-## 4. Se ejecuta el terminal de odoo. Introducir el siguiente comando
+## 3. Se ejecuta el terminal de odoo. Introducir el siguiente comando
 ```
 odoo --init base --database odoo --stop-after-init --db_host=database --db_user odoo --db_password strongpass
+```
+
+Salir usando CTRL + D
+
+## 4. Desde consola de comando o con Docker hacer el build de la imagen
+Esperar a que se termine de ejecutar el build
+
+```
+docker-compose up -d
 ```
 
 ## Parametros en archivo .env
