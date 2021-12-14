@@ -6,7 +6,7 @@ services:
       context: ./postgresql
       args:
         postgres_version: ${POSTGRES_VERSION}
-    container_name: ${COMPOSE_PROJECT_NAME}-postgresql
+    container_name: ${COMPOSE_PROJECT_NAME}-db
     command: ''
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
@@ -29,7 +29,7 @@ services:
         POSTGRES_DB: ${POSTGRES_DB}
         USER: ${POSTGRES_USER}
         PASSWORD: ${POSTGRES_PASSWORD}
-    container_name: ${COMPOSE_PROJECT_NAME}-odoo
+    container_name: ${COMPOSE_PROJECT_NAME}-web
     volumes:
       - ./odoo/config:/etc/odoo
       - ./odoo/addons:/mnt/extra-addons
