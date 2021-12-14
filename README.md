@@ -24,6 +24,13 @@ Esperar a que se termine de ejecutar el build
 docker-compose up -d
 ```
 
+## 5. Se ejecuta el servidor de docker
+Acceder a la siguiente URL: http://localhost:8069
+
+Introducir las siguientes credenciales:
+USER: admin
+PASS: admin
+
 ## Parametros en archivo .env
 El archivo .env debe estar en el directorio donde se encuentra este archivo
 - COMPOSE_PROJECT_NAME: Es el nombre del contenedor y la imagen
