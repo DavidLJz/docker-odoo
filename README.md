@@ -7,7 +7,7 @@ https://www.docker.com/get-started
 
 ## 2. Al terminar, ejecutar el seguimiento comando
 ```
-docker-compose run odoo bash
+docker-compose run web bash
 ```
 
 ## 3. Se ejecuta el terminal de odoo. Introducir el siguiente comando
