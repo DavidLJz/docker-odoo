@@ -24,6 +24,12 @@ Los parametros de este comando corresponden a los parametros de conexión en .en
 
 Salir usando CTRL + D
 
+## 6. Reiniciar los contenedores
+Hay que reiniciar los contenedores para ver los cambios, user el siguiente comando
+```
+docker-compose stop && docker-compose up -d
+```
+
 ## 5. Se ejecuta el servidor de docker
 Acceder a la siguiente URL: http://localhost:8069
 
