@@ -3,26 +3,26 @@
 
 ```
 https://www.docker.com/get-started
+
 ```
 
-## 2. Al terminar, ejecutar el seguimiento comando
-```
-docker-compose run web bash
-```
-
-## 3. Se ejecuta el terminal de odoo. Introducir el siguiente comando
-```
-odoo --init base --database odoo --stop-after-init --db_host=database --db_user odoo --db_password strongpass
-```
-
-Salir usando CTRL + D
-
-## 4. Desde consola de comando o con Docker hacer el build de la imagen
-Esperar a que se termine de ejecutar el build
-
+## 2. Desde la consola de comando hacer el build de la imagen
 ```
 docker-compose up -d
 ```
+
+## 3. Al terminar, ejecutar el siguiente comando
+```
+docker exec -ti odoo-web bash
+```
+
+## 4. Se ejecuta el terminal de odoo. Introducir el siguiente comando
+```
+odoo --init base --database dbname --stop-after-init --db_host=db --db_user dbuser --db_password dbpass
+```
+Los parametros de este comando corresponden a los parametros de conexión en .env y docker-compose.yaml
+
+Salir usando CTRL + D
 
 ## 5. Se ejecuta el servidor de docker
 Acceder a la siguiente URL: http://localhost:8069
